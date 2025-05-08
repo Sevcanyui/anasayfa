@@ -4,15 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.calismayapisi"
+    namespace = "com.example.nafragmant"
     compileSdk = 35
 
-    buildFeatures {
-        viewBinding = true
-    }
-
     defaultConfig {
-        applicationId = "com.example.calismayapisi"
+        applicationId = "com.example.nafragmant"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -46,6 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.runtime.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
